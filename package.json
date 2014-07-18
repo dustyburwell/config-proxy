@@ -1,0 +1,19 @@
+{
+  "name": "config-proxy",
+  "version": "0.0.0",
+  "description": "An http proxy that sends configuration downstream as headers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "downstream": "node downstream.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dusty Burwell (dustyburwell@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^2.19.3",
+    "http-proxy": "^1.1.2",
+    "lodash": "^2.4.1",
+    "xxhashjs": "0.0.5"
+  }
+}

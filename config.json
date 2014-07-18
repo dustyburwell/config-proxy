@@ -1,0 +1,40 @@
+{
+  "downstream": {
+    "host": "localhost",
+    "port": 9008
+  },
+
+  "layers": [
+    {
+      "name": "My Experiment Layer",
+      "id": "my_experiment_layer",
+
+      "settings": {
+        "buy-button-color": "orange"
+      },
+
+      "experiments": [
+        {
+          "name": "My Experiment",
+          "id": "my_experiment",
+          "startMod": 0,
+          "endMod": 999,
+
+          "#guard": {
+            "url": "/experiment.*"
+          },
+
+          "variants": [
+            {
+              "name": "Blue buy button",
+              "id": "blue_buy_button",
+              "settings": {
+                "buy-button-color": "blue"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
